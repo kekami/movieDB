@@ -1,0 +1,59 @@
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  background: #FF424F;
+  z-index: 2;
+
+  ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    a {
+      margin: 0.5em 1em;
+      text-decoration: none;
+      color: #eee;
+      font-size: 1.2em;
+    }
+  }
+  
+  .brandSearch {
+    display: flex;
+    align-items: center;
+
+    .brand {
+      margin: 0.5em 1em;
+      text-decoration: none;
+      font-size: 1.5em;
+      color: #eee;
+    }
+     
+    .icon {
+      position: absolute;
+      
+      margin-left: 3.5em;
+      margin-top: 0.3em;
+      z-index: 1;
+      color: #eee;;
+    }
+
+    .search {
+      border: none;
+      border-radius: 5px;
+      margin: 0 3em;
+      padding-left: 2em;
+      height: 30px;
+      background-color: #FF424F;
+      transition: background .55s ease;
+
+      &::placeholder {
+        color: #eee;
+      }
+      
+      &:hover, &:focus, &:active{
+        outline:none;
+        background: #ffffff;
+        color: #191C1F;
+      }
+    }
+  }
+}

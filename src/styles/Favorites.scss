@@ -1,0 +1,30 @@
+.favorites {
+  list-style: none;
+  width: 100%;
+
+  .favorite {
+    display: flex;
+    justify-content: space-between;
+    background-color: #191C1F;
+    margin: 1em;
+    padding: 1em;
+    box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.75);
+    
+    button {
+      margin: 0 1em;
+      padding: 0.5em 1em;
+      background-color: #FF424F;
+      color: #EEEEEE;
+      border: 2px solid transparent;
+
+      &:focus {
+        outline: 0;
+      }
+
+      &:active {
+        opacity: 0.7;
+      }
+    }
+  }
+
+}

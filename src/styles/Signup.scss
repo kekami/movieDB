@@ -1,0 +1,23 @@
+.container {
+  margin: 2em;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    padding: 2em;
+    background-color: #191C1F;
+
+    input {
+      margin: 0.5em 0;
+    }
+
+    button {
+      margin: 0.4em 0;
+      padding: 0.4em;
+      border: none;
+      background-color: #FF424F;
+      color: #eeeeee;
+    }
+  }
+}

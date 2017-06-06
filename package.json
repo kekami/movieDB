@@ -9,7 +9,7 @@
     "lint": "eslint **/*.js --ignore-pattern node_modules/",
     "start": "NODE=production node index.js",
     "build": "NODE=production webpack",
-    "heroku-postbuild": "webpack -p --config ./webpack.prod.config.js --progress"
+    "heroku-postbuild": "webpack -p --config ./webpack.config.js --progress"
   },
   "keywords": [],
   "author": "",

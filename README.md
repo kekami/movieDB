@@ -5,4 +5,4 @@ Frontend made with React using Redux for state management and Redux Saga for asy
 
 Backend consist of a Node/Express server handling API calls, both to external APIs (themoviedb.com) as well as API calls to a MongoDB database. Authentication is handled via JSON Web Tokens.
 
-[Live version](https://guarded-sierra-32070.herokuapp.com)
+[Live version](https://whispering-falls-55926.herokuapp.com/)

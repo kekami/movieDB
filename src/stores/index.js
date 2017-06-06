@@ -1,5 +1,5 @@
 import 'babel-polyfill';
-import { combineReducers, applyMiddleware, createStore } from 'redux';
+import { combineReducers, applyMiddleware, createStore, compose } from 'redux';
 import createSagaMiddleware from 'redux-saga';
 import { reducer as form } from 'redux-form';
 import { client, signup, login, movie, search, like } from '../reducers';

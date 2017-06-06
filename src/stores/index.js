@@ -25,7 +25,6 @@ function* IndexSaga() {
   ];
 }
 
-
 export default {
   configureStore: () => {
     const reducers = combineReducers({

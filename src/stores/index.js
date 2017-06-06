@@ -33,7 +33,7 @@ export default {
 
     store = createStore(
       reducers,
-      composeSetup(applyMiddleware(sagaMiddleware)),
+      applyMiddleware(sagaMiddleware),
     );
 
     sagaMiddleware.run(IndexSaga);

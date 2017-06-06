@@ -11,6 +11,9 @@
     "build": "NODE=production webpack",
     "heroku-postbuild": "webpack -p --config ./webpack.config.js --progress"
   },
+  "engines": {
+    "node": "8"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

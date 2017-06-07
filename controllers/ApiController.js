@@ -42,7 +42,6 @@ exports.movieDetails = (req, res, next) => {
 };
 
 exports.movieSearch = (req, res, next) => {
-  console.log(req.body);
   MovieController.search(req.body.searchterm, req.body.page)
     .then(response => response.data)
     .then((results) => {

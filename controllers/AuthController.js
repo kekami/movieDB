@@ -8,8 +8,6 @@ exports.register = ((req, res, next) => {
   UserController
     .create(credentials)
     .then((user) => {
-      const token = jwt.sign({ id: user._id }, process.env.TOKEN_SECRET, { expiresIn: 4000 });
-
       res.json({
         confirmation: 'success',
         user,

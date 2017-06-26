@@ -188,8 +188,15 @@
     }
 
     .brandSearch {
+      .icon {
+        margin-left: 0.7em;
+      }
+
       .search {
         border-radius: 5px;
+        padding: 0.5em;
+        padding-left: 2em;
+        width: 10em;
       }
     }
   }

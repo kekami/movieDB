@@ -31,19 +31,16 @@ class Search extends Component {
 
   render() {
     return (
-      <div>
-        <form onSubmit={this.search}>
-          <span className={styles.icon}><i className="fa fa-search" aria-hidden="true" /></span>
-          <input
-            onChange={this.update}
-            className={styles.search}
-            type="text"
-            value={this.state.searchterm}
-            placeholder="Search movies"
-          />
-        </form>
-        {this.state.toSearch}
-      </div>
+      <form onSubmit={this.search}>
+        <span className={styles.icon}><i className="fa fa-search" aria-hidden="true" /></span>
+        <input
+          onChange={this.update}
+          className={styles.search}
+          type="text"
+          value={this.state.searchterm}
+          placeholder="Search movies"
+        />
+      </form>
     );
   }
 }

@@ -1,8 +1,9 @@
 .favorites {
   list-style: none;
   width: 100%;
+  padding: 0;
 
-  .favorite {
+  li {
     display: flex;
     justify-content: space-between;
     background-color: #191C1F;

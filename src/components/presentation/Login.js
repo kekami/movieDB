@@ -34,7 +34,7 @@ class Login extends Component {
     } = this.props;
 
     return (
-      <div className={styles.container}>
+      <div className={styles.login}>
         <form className="widget-form" onSubmit={handleSubmit(this.submit)}>
           <h1>LOGIN</h1>
           <label htmlFor="email">Email</label>

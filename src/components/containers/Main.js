@@ -9,7 +9,7 @@ import Signup from '../presentation/Signup';
 import Favorites from '../containers/Favorites';
 
 const Main = () => (
-  <div style={{ width: '100%', minHeight: '100vh' }}>
+  <div style={{ width: '100%', minHeight: '100%' }}>
     <Route exact path="/" component={MainPage} />
     <Route path="/movies/popular" component={Movies} />
     <Route path="/movies/toprated" component={Movies} />

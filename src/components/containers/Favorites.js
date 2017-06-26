@@ -26,7 +26,7 @@ class Favorites extends Component {
     return (
       <ul className={styles.favorites}>
         {client.likes.map(movie => (
-          <li className={styles.favorite} key={movie.id}>
+          <li className={styles["favorites__favorite"]} key={movie.id}>
             <span className={styles.title}>{movie.title}</span>
             <button onClick={() => this.unlike(movie.id)}>Unlike</button>
           </li>

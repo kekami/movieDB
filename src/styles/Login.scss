@@ -1,6 +1,8 @@
-.container {
-  margin: 2em;
-
+.login {
+  h1 {
+    margin-top: 0;
+  }
+  
   form {
     display: flex;
     flex-direction: column;
@@ -10,11 +12,12 @@
 
     input {
       margin: 0.5em 0;
+      padding: 0.5em;
     }
 
     button {
       margin: 0.4em 0;
-      padding: 0.4em;
+      padding: 0.5em;
       border: none;
       background-color: #FF424F;
       color: #eeeeee;

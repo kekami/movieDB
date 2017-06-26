@@ -48,13 +48,11 @@ class SearchResults extends Component {
 
   render() {
     const { page } = this.state;
-
-    if (this.props.isRequesting) {
-      return <h1>Loading</h1>;
-    }
+    const { isRequesting } = this.props;
 
     return (
       <MovieList
+        isRequesting={isRequesting}
         previous={this.previousPage}
         next={this.nextPage}
         page={page}

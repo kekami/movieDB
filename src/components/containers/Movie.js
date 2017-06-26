@@ -41,10 +41,6 @@ class Movie extends Component {
 
   render() {
     const currentMovie = this.props.movieDetails;
-    if (this.props.isRequesting || !currentMovie) {
-      return <h1>Loading</h1>;
-    }
-
     const isLoggedIn = this.props.client.id !== undefined;
     let liked;
     if (this.props.client.likes) {
@@ -61,16 +57,27 @@ class Movie extends Component {
     }
 
     return (
-      <div>
+      <div className={styles.movie}>
         <button onClick={this.goBack}>Go Back</button>
-        <div className={styles.container}>
-          <img src={`https://image.tmdb.org/t/p/w320${currentMovie.poster_path}`} alt="" />
-          <div className={styles.movieData}>
-            <h1>{currentMovie.title}</h1>
-            <p>{currentMovie.overview}</p>
-            {button}
+
+        {
+          this.props.isRequesting || !currentMovie ? 
+            <div className={styles["movie--loading"]}>
+            <h1 className={styles.movie__loading}>Loading</h1>
           </div>
-        </div>
+          :
+          <div
+            className={styles["movie__background"]}
+            style={{ backgroundImage: 'url(https://image.tmdb.org/t/p/w320' + currentMovie.poster_path + ')'}}
+          >
+            {/*<img src={`https://image.tmdb.org/t/p/w320${currentMovie.poster_path}`} alt="" />*/}
+            <div className={styles["movie__info"]}>
+              <h1>{currentMovie.title}</h1>
+              <p>{currentMovie.overview}</p>
+              {button}
+            </div>
+          </div>
+        }
       </div>
     );
   }

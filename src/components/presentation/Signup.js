@@ -36,7 +36,7 @@ class Signup extends Component {
     } = this.props;
 
     return (
-      <div className={styles.container}>
+      <div className={styles.signup}>
         <form onSubmit={handleSubmit(this.submit)}>
           <h1>Sign Up</h1>
           <label htmlFor="firstName">Firstname</label>

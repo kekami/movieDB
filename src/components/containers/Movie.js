@@ -68,7 +68,7 @@ class Movie extends Component {
           :
           <div
             className={styles["movie__background"]}
-            style={{ backgroundImage: 'url(https://image.tmdb.org/t/p/w320' + currentMovie.poster_path + ')'}}
+            style={{ backgroundImage: 'url(https://image.tmdb.org/t/p/w640' + currentMovie.poster_path + ')'}}
           >
             {/*<img src={`https://image.tmdb.org/t/p/w320${currentMovie.poster_path}`} alt="" />*/}
             <div className={styles["movie__info"]}>

@@ -1,8 +1,9 @@
 .movieList {
   height: 100%;
+  position: relative;
 
   &--loading {
-    position: fixed;
+    position: absolute;
       z-index: 1;
       left: 0;
       top: 0;
@@ -15,7 +16,7 @@
 
   &__loading {
     position: absolute;
-    top: 50%;
+    top: 35vh;
     left: 50%;
     transform: translate(-50%, -50%);
   }

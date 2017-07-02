@@ -71,3 +71,13 @@
     }
   }
 }
+
+@media (min-width: 50em) {
+  .movieList {
+    &__movieCard {
+      img {
+        width: 12em;
+      }
+    }
+  }
+}
